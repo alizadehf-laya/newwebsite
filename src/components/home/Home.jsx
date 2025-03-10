@@ -1,19 +1,18 @@
-function Home(){
-    return(
-        <>
-     <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Slidebar from '../slidebar/Slidebar';
 
-<button type="button" class="btn btn-link">Link</button>
+function Home() {
+  return (
+    <Container fluid >
+      <Row   style={{border: " 1px solid red"}}>
+        <Col lg={3} md={3}  sm={3} style={{border: " 1px solid red"}}><Slidebar/></Col>
+        <Col lg={9} md={9}  sm={9} style={{border: " 1px solid red"}}>1 of 1</Col>
+      </Row>
 
-        </>
-    )
- 
+    </Container>
+  );
 }
+
 export default Home;
