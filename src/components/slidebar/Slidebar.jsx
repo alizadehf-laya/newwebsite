@@ -1,44 +1,30 @@
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 
-function Slidebar() {
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Mypic from './mypic';
+import Icons from './Iconslucude/Icons';
+
+
+
+function Slidebar( props) {
+  const myStyle = {
+    padding:"3px",
+    backgroundColor: "rgb(29, 28, 28)",
+    widths:"100%",
+      justifyContent:"center",
+      height:`${props.height}`
+  
+  };
   return (
-    <ButtonGroup vertical>
-      <Button>Button</Button>
-      <Button>Button</Button>
-
-      <DropdownButton
-        as={ButtonGroup}
-        title="Dropdown"
-        id="bg-vertical-dropdown-1"
-      >
-        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-      </DropdownButton>
-
-      <Button>Button</Button>
-      <Button>Button</Button>
-
-      <DropdownButton
-        as={ButtonGroup}
-        title="Dropdown"
-        id="bg-vertical-dropdown-2"
-      >
-        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-      </DropdownButton>
-
-      <DropdownButton
-        as={ButtonGroup}
-        title="Dropdown"
-        id="bg-vertical-dropdown-3"
-      >
-        <Dropdown.Item eventKey="1">Dropdown link</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Dropdown link</Dropdown.Item>
-      </DropdownButton>
-    </ButtonGroup>
+    <Container noGutters >
+      <Row style={myStyle} >
+        <Col xs={12} style={{padding:"0"}}><Mypic/></Col>
+        <h5 style={{color:"white"}} className='text-center mt-1'> Laya Alizadeh</h5>
+       <Icons/>
+      </Row>
+    </Container>
   );
 }
 
