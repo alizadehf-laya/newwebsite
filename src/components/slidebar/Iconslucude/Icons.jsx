@@ -13,13 +13,11 @@ function Icons() {
      height:"35px",
       backgroundColor:" rgb(55,55,55)",
       borderRadius:"100%",
-      margin:"0"
-      
-    
-
-}
+      margin:"0"  
+    }
+ 
   return (
-    <Container >
+    <Container  >
       <Row className="d-flex flex-nowrap justify-content-center m-0 p-0">
         <Col style={{margin:"0 ",padding:"0"}}>
           <div style={IconRound} className='d-flex justify-content-center align-items-center m-0'>
