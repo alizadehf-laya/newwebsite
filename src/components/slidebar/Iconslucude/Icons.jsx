@@ -7,8 +7,8 @@ import { Radius } from "lucide-react";
 
 function Icons() {
   const IconRound={
-    width:"50px",
-     height:"50px",
+    width:"35px",
+     height:"35px",
       backgroundColor:" rgb(55,55,55)",
       borderRadius:"100%"
       
@@ -17,12 +17,12 @@ function Icons() {
 }
   return (
     <Container >
-      <Row>
-        <Col><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
-        <Col><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
-        <Col><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
-        <Col><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
-        <Col><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
+      <Row className="d-flex flex-nowrap justify-content-center">
+        <Col ><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
+        <Col  ><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
+        <Col  ><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
+        <Col ><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
+        <Col  ><div style={IconRound} className='d-flex justify-content-center align-items-center'><IconInsa/></div></Col>
 
       </Row>
     </Container>
