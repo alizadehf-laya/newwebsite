@@ -18,7 +18,7 @@ function Mypic() {
       <Row >
 
         <Col xs={6} md={4}>
-          <Image style={mypicstyle} src="/images/helia.jpg" className='mt-2' roundedCircle />
+          <Image style={mypicstyle} src="/images/helia.jpg" className='mt-3' roundedCircle />
         </Col>
 
       </Row>

@@ -11,16 +11,17 @@ import ButtonSlider from './ButtonSlider';
 
 function Slidebar( props) {
   const myStyle = {
-    padding:"3px",
+   flex:"1",
     backgroundColor: "rgb(29, 28, 28)",
     widths:"100%",
       justifyContent:"center",
       height:`${props.height}`,
-      overflowX:"hidden"
+      overflowX:"hidden",
+    
   
   };
   return (
-    <Container noGutters >
+    <Container   className='p-0 m-0'>
       <Row style={myStyle} >
         <Col xs={12} style={{padding:"0"}}><Mypic/></Col>
         <h5 style={{color:"white"}} className='text-center mt-1'> Laya Alizadeh</h5>
